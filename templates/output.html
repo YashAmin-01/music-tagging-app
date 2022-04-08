@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    {% extends "layout.html" %}
+    {% block content %}
+
+    <div class="home">
+        <h1>Audio Tag</h1>
+        <p>Upload files and click submit to get metadata.</p>
+
+        <div>
+            <p>Name: {{filename}}</p>
+            <p>Genre: xxxxxxxx</p>
+            <p>Mood: xxxxxxxx</p>
+            <p>Style: xxxxxxx</p>
+        </div>
+
+        <form action="{{ url_for('home') }}" method="GET">
+        <div>
+            <input type="submit" value="Home"></input>
+        </div>
+        </form>
+
+    </div>
+    {% endblock %}
+
+
+</body>
+
+</html>
